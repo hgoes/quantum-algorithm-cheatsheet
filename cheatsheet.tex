@@ -8,6 +8,16 @@
 \begin{document}
 
 \section{Operatoren}
+\subsection{Eigenschaften}
+Ein Operator $A$ ist
+\begin{description}
+\item[Unitär]:
+  \[ A\cdot A^\dagger = 1 \]
+  Es gilt:
+  \[ \| A\cdot x \| = \| x \| \]
+\item[Hermitesch]:
+  \[ A = A^\dagger \]
+\end{description}
 \subsection{Hadamard}
 
 \[ H = \frac{1}{\sqrt{2}}\left(\begin{array}{rr}
@@ -39,7 +49,21 @@ Pauli-Matrizen sind unitär d.h.
 
 
 Allgemeine Heisenbergsche Unschärferelation:
-\[ \sigma_A \cdot \sigma_B \ge \frac{1}{2} || \]
+\[ \Delta A \cdot \Delta B \ge \frac{1}{2} |\left<\psi|[A,B]|\psi\right>| \]
 
   
+\subsection{Cnot}
+\[ Cnot = \left(\begin{array}{rrrr}
+    1 & 0 & 0 & 0\\
+    0 & 1 & 0 & 0\\
+    0 & 0 & 0 & 1\\
+    0 & 0 & 1 & 0
+  \end{array}\right) \]
+
+\subsection{Skalarprodukt}
+\[ \left<u|v\right> = \overline{\left<v|u\right>} \]
+\[ \left<\lambda\cdot u|v\right> = \overline{\lambda}\left<u|v\right> \]
+\[ \left<u|\lambda\cdot v\right> = \lambda\left<u|v\right> \]
+\[ \left<x|y+z\right> = \left<x|y\right> + \left<x|z\right> \]
+\[ \left<x+y|z\right> = \left<x|z\right> + \left<y|z\right> \]
 \end{document}
